@@ -1,0 +1,26 @@
+{
+  "name": "neochic/slim-tools-twig-router",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christoph Stickel",
+      "email": "christoph@neochic.de"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/Neochic/slim-tools.git"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "neochic/slim-tools": "master",
+    "twig/twig": "1.*",
+    "twig/extensions": "1.*",
+    "slim/views": "0.1.*"
+  },
+  "autoload": {
+    "psr-4": { "Neochic\\SlimTools\\": "src/" }
+  }
+}

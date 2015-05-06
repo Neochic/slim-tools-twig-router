@@ -1,0 +1,16 @@
+services:
+  view.twig.extension.debug:
+    class: Twig_Extension_Debug
+  view.twig_base:
+    class: Neochic\SlimTools\Service\TwigView
+    arguments:
+      - %twig%
+      - %core%
+      - @view.twig.extension.debug
+  view.twig:
+    parent: view.twig_base
+  router.twig:
+    class: Neochic\SlimTools\Router\TwigRouter
+    parent: router
+    arguments:
+      - @view.twig

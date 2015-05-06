@@ -1,0 +1,5 @@
+parameters:
+  twig:
+    templateDirs:
+      - ../src/Templates
+    cacheDir: ../tmp/twig
