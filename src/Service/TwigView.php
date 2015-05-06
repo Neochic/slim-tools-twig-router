@@ -7,5 +7,6 @@ class TwigView extends \Slim\Views\Twig {
         $this->parserOptions['cache'] = $twigConfig['cacheDir'];
         $this->parserExtensions = array_slice(func_get_args(), 2);
         $this->twigTemplateDirs = $twigConfig['templateDirs'];
+        parent::__construct();
     }
 }

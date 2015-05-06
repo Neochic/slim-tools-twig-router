@@ -12,6 +12,6 @@ class TwigRouter extends Router
     {
         $this->slim->contentType('text/html');
         $this->template = $controller.'/'.$action.'.twig';
-        parent::render($data);
+        parent::render($data, $controller, $action);
     }
 }
